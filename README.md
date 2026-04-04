@@ -115,3 +115,22 @@ Unlike traditional BI dashboards, this project combines **descriptive analytics*
 - Goal: Reduce CA dependency from 18.8% → 12% within 18 months
 
 ---
+## 📞 Contact & Support
+
+| Platform | Details |
+| :--- | :--- |
+| **👤 Author** | Vaidehi (AnalyzeWithVaidehi) |
+| **💼 LinkedIn** | [vaidehibharambeaulagar](www.linkedin.com/in/vaidehibharambeaulagar) |
+| **📧 Email** | [vaidehibh@gmail.com](mailto:vaidehibh@gmail.com) |
+| **🐙 GitHub** | [@AnalyzeWithVaidehi](https://github.com/AnalyzeWithVaidehi) |
+
+---
+
+---
+
+## ⭐ Show Your Support
+
+> **Did this project help you?**  
+> If you find this analysis or the forecasting methodology useful, please give this repository a **Star**! It helps others in the community discover the work and supports my journey as a Data Scientist.
+
+---
