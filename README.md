@@ -1,4 +1,4 @@
-# Regional-Sales-Analysis-Hybrid (A Quick Overview)
+# Regional-Sales-Analysis-Hybrid (Executive Summary)
 End to end sales analysis project using Python (EDA), Excel, SQL, and PowerBI. Includes predictive trend forecasting.
 
 ## 📰**Project Overview:** 
@@ -43,7 +43,7 @@ Unlike traditional BI dashboards, this project combines **descriptive analytics*
 ├── 📄 DATA_DICTIONARY.md    # Mapping of 64K transaction columns
 ├── 📄 METHODOLOGY.md        # Technical approach & logic
 ├── 📄 TECHNICAL_SETUP.md    # How to reproduce this project
-└── 📄 requirements.txt      # Python dependencies
+└── 📄 Regonal_Sales_ER_Diagram.png      # Entity Realationship Diagram
 ```
 
 ## 📈 Key Business Questions
@@ -120,7 +120,7 @@ Unlike traditional BI dashboards, this project combines **descriptive analytics*
 | Platform | Details |
 | :--- | :--- |
 | **👤 Author** | Vaidehi (AnalyzeWithVaidehi) |
-| **💼 LinkedIn** | [vaidehibharambeaulagar](www.linkedin.com/in/vaidehibharambeaulagar) |
+| **💼 LinkedIn** | [vaidehibharambeaulagar](https://www.linkedin.com/in/vaidehibharambeaulagar/) |
 | **📧 Email** | [vaidehibh@gmail.com](mailto:vaidehibh@gmail.com) |
 | **🐙 GitHub** | [@AnalyzeWithVaidehi](https://github.com/AnalyzeWithVaidehi) |
 
