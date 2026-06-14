@@ -57,55 +57,67 @@ Unlike traditional BI dashboards, this project combines **descriptive analytics*
 ## 1️⃣ **Revenue Concentration Risk** 
 - **California alone drives 18.8%** of total revenue ($12.5M of $66.7M)
 - Top 3 states (CA + IL + FL) = **34.6%** of all revenue
-- **Power Trio** of products (Products 25, 26, 13) = **15.3%** of revenue
+- **Power Trio** of products (Products 25, 26, 13) = **23.8%** of revenue
 - **Action**: Pilot expansion in Texas & Florida to diversify revenue base
 
 ## 2️⃣ **Seasonal Patterns (Volume vs. Value Decomposition)**
 - **January Peak**: $6.88M (highest volume, ~5,000 orders)
-  - Driver: **Volume-based** (10% above average)
+  - Driver: **Volume-based** (highest order count of the year)
   - Implication: Operational scalability (staffing/logistics) is critical
   
-- **March Value Peak**: Highest average unit price at **$131**
-  - Driver: **Price-based** (customers willing to pay more)
+- **March Value Peak**: Highest average unit price at **$131.22**
+  - Driver: **Price-based** (customers willing to pay more in March)
   - Implication: Opportunity for premium marketing & bundling
   
-- **April Trough**: $5.0M (lowest revenue)
-  - Driver: Simultaneous crash in volume AND unit price
+- **April Trough**: $5.00M (lowest revenue month, lowest avg unit price at $118.21)
+  - Driver: Simultaneous drop in volume AND unit price
   - Action: Launch "Spring Recovery" campaigns
+- **November secondary trough**: $4.99M
+  - Lowest order count outside April — worth monitoring
+
 
 ## 3️⃣ **Portfolio Performance Gap**
 - **Top 10 products**: 59.82% of total revenue
-- **Bottom 10 products**: Only 7.15% of total revenue
-- **8x revenue delta** between top and bottom performers
+- **Bottom 10 products**: 14.1% of total revenue
+- **4.3x revenue delta** between top and bottom performers
 - **Action**: Perform margin audit; discontinue or bundle low performers
 
 ## 4️⃣ **2026 Forecast & Revenue Gap**
 - **Seasonal Naïve Forecast**: $15.79M (based on 2025 trends + -1.50% YoY contraction)
 - **10% Growth Budget Target**: $17.37M
 - **Gap to Close**: **$1.58M (-9.1%)**
-- **Official Stakeholder Budget**: $62.7M
-- **Model Accuracy**: 93% (MAPE: 7.0% via backtesting on 2024)
+- **Official Stakeholder Budget**: $62.7M (full year, all products)
+- **Model Accuracy**: 93% (MAPE: 7.0% via backtesting on 2024 data)
+### Core KPIs (2022–2026)
+
+| Metric | Value |
+| :--- | :--- |
+| **Total Revenue** | $66.66M |
+| **Total Orders** | 10,679 |
+| **Total Customers** | 175 |
+| **Total Products** | 30 |
+| **Avg Order Value** | $1,039.87 |
 
 ### 💼 Business Impact
-- **Gap Analysis:** Forecasted $15.7M revenue vs $17.3M target.
-- **Risk Mitigation:** Alerted management to a potential 9.1% shortfall 10 months in advance.
+- **Gap Analysis:** Forecasted $15.7M revenue vs $17.3M target — 9.1% shortfall identified
+- **Risk Mitigation:** Alerted management to a potential shortfall 10 months in advance.
 - **Accuracy:** Backtested on 2024 data with 93% reliability.
 ---
 
 ### 💡 Strategic Recommendations- Whats Next? (2026 Roadmap)
 
 ## 🚀 **Strategy 1: January "Logistics" Play**
-- Since January is volume-driven, success requires **10% higher operational capacity**
+- Since January is volume-driven, (5,071 orders, $6.89M revenue), success requires higher operational capacity.
 - Focus: Staffing, shipping, fulfillment infrastructure
 - ROI: Handle 5,000+ orders without quality degradation
 
 ## 🎁 **Strategy 2: March "Premium" Play**
-- Capitalize on customers' willingness to pay more ($131 avg unit price)
+- Capitalize on customers' willingness to pay more  ($131.12 avg unit price — highest of the year).
 - Focus: High-margin bundles, premium product marketing
 - Expected Lift: 5–10% improvement in average order value
 
-## 📈 **Strategy 3: April "Spring Recovery" Campaign**
-- Counter natural double-crash in volume AND price
+## 📈 **Strategy 3: April & November "Spring Recovery" Campaign**
+- Counter natural double-crash in volume AND price  in April ($118.21 avg price, $5.0M revenue).
 - Focus: Aggressive promotional campaigns, flash sales, discounts
 - Objective: Bridge April trough back to $5.5M+ baseline
 
