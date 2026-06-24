@@ -1,49 +1,64 @@
---- 
- 
-## 🚀 Quick Start 
- 
-### Prerequisites 
-- Python 3.8+ 
-- MySQL 5.7+ 
-- Git 
-- Power BI Desktop (optional, for editing dashboard) 
- 
-### 1️⃣ Clone Repository 
-```bash 
-git clone https://github.com/AnalyzeWithVaidehi/Regional-Sales-Analysis-Hybrid.git 
-cd Regional-Sales-Analysis-Hybrid 
- ```
+# 📂 Scripts — Configuration & Dependencies
 
-### 2️⃣ Install Dependencies 
+This folder contains the database connection config and Python dependencies used across all notebooks.
 
-pip install -r requirements.txt 
- 
+---
 
-### 3️⃣ Configure Database 
+## Files
 
-nano 04_scripts/config.py 
+### `config.py` — Database Connection
+Stores MySQL credentials used by all notebooks to connect to `sales_hybrid_db`.
 
-*nano is a text editor for the command line, commonly found on Linux and macOS.*
+```python
+DB_CONFIG = {
+    'user': 'root',
+    'password': 'your_password',
+    'host': 'localhost',
+    'port': 3306,
+    'database': 'sales_hybrid_db'
+}
+```
 
-*For Windows, nano might not be installed. You can simply open the **04_scripts/config.py** file using Notepad or VS Code instead.*
-# Add your MySQL credentials 
- 
+**Edit this file before running any notebook.** Replace `your_password` with your actual MySQL root password. All other values can stay as-is if you're running MySQL locally on the default port.
 
-### 4️⃣ Load Data 
+Every notebook imports this file like so:
+```python
+import sys
+sys.path.append(r'path\to\04_scripts')
+from config import DB_CONFIG
 
-python 04_scripts/upload_data.py 
- 
+engine = create_engine(
+    f"mysql+pymysql://{DB_CONFIG['user']}:{DB_CONFIG['password']}"
+    f"@{DB_CONFIG['host']}:{DB_CONFIG['port']}/{DB_CONFIG['database']}"
+)
+```
 
-### 5️⃣ Run Analysis Notebooks 
+> ⚠️ `config.py` is listed in `.gitignore` if your password is real. Never commit real credentials to a public repository — use environment variables or a secrets manager in production.
 
-jupyter notebook 05_notebooks/ 
-# Open in order: 01 → 02 → 03 → 04 → 05 
- 
+---
 
-### 6️⃣ View Dashboard 
+### `requirements.txt` — Python Dependencies
 
-Open 06_dashboard/Regional_Sales_Forecasting_2026.pbix in Power BI Desktop 
+Install all dependencies with:
+```bash
+pip install -r 04_scripts/requirements.txt
+```
 
-Or view PDF: 06_dashboard/Regional_Sales_Forecasting_2026.pdf 
+| Library | Purpose |
+|---|---|
+| `pandas` | Data loading, cleaning, transformation |
+| `numpy` | Numerical computing |
+| `matplotlib` | Base plotting |
+| `seaborn` | Statistical visualisation |
+| `scikit-learn` | Linear regression models |
+| `sqlalchemy` | Database connection layer |
+| `pymysql` | MySQL driver for SQLAlchemy |
+| `jupyter` | Notebook environment |
 
- 
+---
+
+## Notes
+
+- `Data_Import.ipynb` (in `05_notebooks/`) handles data loading — there is no separate upload script
+- All notebooks must be run from `05_notebooks/` with `04_scripts/` on the Python path (handled automatically inside each notebook via `sys.path.append`)
+- See `TECHNICAL_SETUP.md` in the root for the full reproduction walkthrough
